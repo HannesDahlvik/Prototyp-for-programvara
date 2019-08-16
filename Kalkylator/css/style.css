@@ -3,5 +3,92 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: #333;
+  color: #fff;
+}
+
+.calculator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+.calculator .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 20px 0;
+}
+
+.calculator .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.calculator input {
+  width: 400px;
+  border: none;
+  border-radius: 50px;
+  padding: 7px 15px;
+  outline: none;
+  margin: 20px 0;
+  text-align: center;
+  font-size: 2em;
+}
+
+.calculator #symbol {
+  width: 64px !important;
+}
+
+.calculator label {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.calculator button {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-size: 2em;
+  margin: 0 20px;
+  outline: none;
+}
+
+.calculator button:hover {
+  border-color: #aaa;
+  color: #aaa;
 }
 /*# sourceMappingURL=style.css.map */

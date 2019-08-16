@@ -6,21 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kalkylator</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <input type="number" id="number1">
-
-    <input type="number" id="number2">
-
-    <button id="addition">+</button>
-    <button id="subtract">-</button>
-    <button id="multiply">*</button>
-    <button id="division">/</button>
-
-    <input disabled id="answer">
+    <div class="calculator">
+        <div class="container">
+            <div class="col">
+                <label for="number1">Number 1</label>
+                <input type="number" name="number1" id="number1">
+            </div>
+            <div class="col">
+                <label for="symbol">Symbol</label>
+                <input name="symbol" id="symbol" disabled>
+            </div>
+            <div class="col">
+                <label for="number2">Number 2</label>
+                <input type="number" name="number2" id="number2">
+            </div>
+        </div>
+        <div class="container">
+            <button id="addition">+</button>
+            <button id="subtract">-</button>
+            <button id="multiply">*</button>
+            <button id="division">/</button>
+        </div>
+        <label for="answer">Answer</label>
+        <input disabled name="answer" id="answer">
+    </div>
 
     <script src="scipt.js"></script>
 </body>

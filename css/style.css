@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: #333;
+  color: #fff;
+}
+
+body h1 {
+  font-size: 3em;
+  text-align: center;
+  margin-top: 50px;
+}
+
+body a {
+  color: #fff;
+}
+
+body .container {
+  width: 1200px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */
