@@ -21,6 +21,7 @@ body {
 
     .container {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         width: 1200px;
         margin: 0 auto;
@@ -28,7 +29,7 @@ body {
 
         .card {
             width: 30%;
-            margin: 0 10px;
+            margin: 10px;
             background: #fff;
             color: #333;
             border-radius: 6px;
@@ -87,12 +88,6 @@ body {
 @media (max-width: 1200px) {
     .container {
         width: 100% !important;
-        flex-direction: column;
         padding: 20px;
-    }
-
-    .card {
-        width: 100% !important;
-        margin: 20px 0 !important;
     }
 }
