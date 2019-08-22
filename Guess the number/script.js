@@ -1,10 +1,25 @@
-let maxNumberToGues = 20;
-let numberToGuess = Math.round(Math.random() * maxNumberToGues);
+let maxNumberToGuess = 20;
+let numberToGuess = Math.round(Math.random() * maxNumberToGuess);
 let number = document.getElementById("number");
 let submitButton = document.getElementById("submit");
 let result = document.getElementById("result");
 let playAgain = document.getElementById("playAgain");
-let tries = count = '';
+let startButton = document.getElementById("startButton");
+let guesserName = document.getElementById("name");
+let starter = document.getElementById("form");
+let game = document.getElementById("game");
+let tries = count = 1;
+
+// Play
+
+startButton.addEventListener('click', playGame);
+
+function playGame(event) {
+    event.preventDefault();
+
+    form.style.display = 'none';
+    game.style.display = 'flex';
+}
 
 submitButton.addEventListener('click', randomizer)
 
@@ -21,10 +36,12 @@ function randomizer(event) {
         result.innerHTML = 'Insert a number higher than 0';
     } else if (number.value > numberToGuess) {
         result.innerHTML = 'Your number is too high';
+        tries = count += 1;
     } else if (number.value < numberToGuess) {
         result.innerHTML = 'Your number is too low';
+        tries = count += 1;
     } else {
-        result.innerHTML = 'Correct! It took you ' + tries + ' tries';
+        result.innerHTML = 'Good ' + guesserName.value + ' it took you ' + tries + ' tries to guess the correct number';
         number.disabled = true;
         submitButton.disabled = true;
         playAgain.style.display = "inline-block";
@@ -39,9 +56,11 @@ function reset() {
     number.value = '';
     result.innerHTML = '';
     playAgain.style.display = 'none';
+    form.style.display = 'flex';
+    game.style.display = 'none';
+    guesserName.value = '';
     number.disabled = false;
     submitButton.disabled = false;
-    numberToGuess = Math.round(Math.random() * maxNumberToGues);
+    numberToGuess = Math.round(Math.random() * maxNumberToGuess);
+    tries = count = 0;
 }
-
-console.log(tries);

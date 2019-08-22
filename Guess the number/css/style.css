@@ -12,6 +12,10 @@ body {
   height: 100vh;
 }
 
+#game {
+  display: none;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -74,7 +78,7 @@ button {
   background: none;
   border: 1px solid #fff;
   color: #fff;
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 5px;
   font-size: 2em;
   cursor: pointer;
