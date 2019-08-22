@@ -25,25 +25,24 @@ body .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 1200px;
-  margin: 0 auto;
-  margin-top: 50px;
+  margin: 50px auto;
 }
 
 body .container .card {
   width: 30%;
+  -webkit-column-break-inside: avoid;
+          break-inside: avoid;
+  height: auto !important;
   margin: 10px;
   background: #fff;
   color: #333;
-  border-radius: 6px;
-  height: 100%;
+  border-radius: 3px;
 }
 
 body .container .card .card-top {
@@ -52,28 +51,36 @@ body .container .card .card-top {
 
 body .container .card .card-top img {
   width: 100%;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
 }
 
 body .container .card .card-info {
-  padding: 20px 10px;
+  padding: 0 20px;
+}
+
+body .container .card .card-info h3 {
+  font-size: 2em;
+  font-weight: 400;
 }
 
 body .container .card .card-info p {
-  margin: 20px 0;
+  font-weight: 300;
+  margin-bottom: 10px;
 }
 
-body .container .card .card-info .btn {
+body .container .card .card-footer {
+  padding: 20px;
+  border-top: 1px solid rgba(180, 180, 180, 0.5);
+}
+
+body .container .card .card-footer .btn {
   background: #333;
   color: #fff;
   padding: 10px;
-  margin-top: 20px;
   text-decoration: none;
   border-radius: 5px;
 }
 
-body .container .card .card-info .btn:hover {
+body .container .card .card-footer .btn:hover {
   background: #444;
 }
 
