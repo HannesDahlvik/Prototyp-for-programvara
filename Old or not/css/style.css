@@ -14,6 +14,7 @@ body {
 
 h1 {
   font-size: 4em;
+  margin-bottom: 20px;
 }
 
 form {
@@ -44,5 +45,16 @@ form input {
 form button {
   padding: 10px 20px;
   border: 1px solid #fff;
+  background: none;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-transition: .2s;
+  transition: .2s;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #fff;
+  color: #333;
 }
 /*# sourceMappingURL=style.css.map */
