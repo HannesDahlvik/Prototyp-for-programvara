@@ -111,7 +111,7 @@ body .col {
 
 @media (max-width: 600px) {
   .card {
-    width: 100% !important;
+    width: 80% !important;
   }
   h1 {
     font-size: 2em;

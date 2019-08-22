@@ -20,18 +20,6 @@ body {
     }
 
     .container {
-        // display: flex;
-        // justify-content: center;
-        // flex-wrap: wrap;
-
-        // column-count: 3;
-        // column-gap: 0;
-
-        // display: grid;
-        // grid-template-columns: 30% 30% 30%;
-        // grid-gap: 10px;
-        // grid-auto-flow: column;
-
         width: 1200px;
         margin: 50px auto;
 
@@ -39,7 +27,6 @@ body {
             width: 100%;
             break-inside: avoid;
             height: auto !important;
-            // margin: 10px;
             background: #fff;
             color: #333;
             height: 100%;
@@ -117,7 +104,7 @@ body {
 
 @media (max-width: 600px) {
     .card {
-        width: 100% !important;
+        width: 80% !important;
     }
 
     h1 {
