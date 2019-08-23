@@ -21,6 +21,10 @@ body a {
   color: #fff;
 }
 
+body .grid-item {
+  margin: 10px 0;
+}
+
 body .container {
   width: 1200px;
   margin: 50px auto;
@@ -68,8 +72,9 @@ body .container .card .card-footer .btn {
   background: #333;
   color: #fff;
   padding: 10px;
+  height: 36px;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 body .container .card .card-footer .btn:hover {

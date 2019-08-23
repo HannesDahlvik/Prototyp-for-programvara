@@ -19,6 +19,10 @@ body {
         color: #fff;
     }
 
+    .grid-item {
+        margin: 10px 0;
+    }
+
     .container {
         width: 1200px;
         margin: 50px auto;
@@ -62,8 +66,9 @@ body {
                     background: #333;
                     color: #fff;
                     padding: 10px;
+                    height: 36px;
                     text-decoration: none;
-                    border-radius: 5px;
+                    border-radius: 2px;
 
                     &:hover {
                         background: #444;
