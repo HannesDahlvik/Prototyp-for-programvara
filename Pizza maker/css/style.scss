@@ -6,7 +6,6 @@
 
 body {
     background: #333;
-    color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
 }
@@ -14,17 +13,26 @@ body {
 .container {
     margin: 0 auto;
     padding: 50px 0;
-    height: 100px;
-    width: 1200px;
-    text-align: center;
+    height: 100%;
+    width: 100%;
+
+    form {
+        margin: 0 auto;
+        width: 50%;
+        padding: 50px;
+        border-radius: 5px;
+        background: #e1e1e1;
+    }
 
     h1 {
         font-size: 6em;
         font-weight: 400;
+        width: 100%;
+        text-align: center;
     }
 
     h3 {
-        font-size: 3em;
+        font-size: 2em;
         font-weight: 400;
         margin: 20px 0;
     }
@@ -35,5 +43,29 @@ body {
 
     p {
         margin: 20px 0;
+    }
+
+    .toppings {
+        display: flex;
+    }
+}
+
+@media (max-width: 800px) {
+    form {
+        width: 80% !important;
+
+        h1 {
+            font-size: 3em !important;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    form {
+        width: 95% !important;
+    }
+
+    .toppings {
+        flex-direction: column;
     }
 }

@@ -8,11 +8,12 @@ let price = 0;
 let mediumSize = document.getElementById("medium");
 let largeSize = document.getElementById("large");
 
-let pepperoniPrice = document.getElementById("pepperoni");
-let OnionsPrice = document.getElementById("onions");
-let pineapplePrice = document.getElementById("pineapple");
-let kebabPrice = document.getElementById("kebab");
-let extraCheesePrice = document.getElementById("extra-cheese");
+let pepperoni = document.getElementById("pepperoni");
+let onions = document.getElementById("onions");
+let pineapple = document.getElementById("pineapple");
+let kebab = document.getElementById("kebab");
+let extraCheese = document.getElementById("extra-cheese");
+let tunaFish = document.getElementById("tuna-fish");
 
 pizzaMaker.addEventListener('change', priceCalc);
 
@@ -20,31 +21,35 @@ function priceCalc() {
     price = 0;
 
     if (mediumSize.checked === true) {
-        price += 7.99;
+        price += 6.99;
     }
 
     if (largeSize.checked === true) {
-        price += 9.99;
+        price += 8.99;
     }
 
-    if (pepperoniPrice.checked === true) {
+    if (pepperoni.checked === true) {
         price += 1.5;
     }
 
-    if (OnionsPrice.checked === true) {
+    if (onions.checked === true) {
         price += 2;
     }
 
-    if (pineapplePrice.checked === true) {
+    if (pineapple.checked === true) {
         price += 2;
     }
 
-    if (kebabPrice.checked === true) {
+    if (kebab.checked === true) {
         price += 3;
     }
 
-    if (extraCheesePrice.checked === true) {
+    if (extraCheese.checked === true) {
         price += 1;
+    }
+
+    if (tunaFish.checked === true) {
+        price += 1.5;
     }
 
     price = Math.round(price * 100) / 100;
