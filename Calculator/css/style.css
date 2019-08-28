@@ -65,6 +65,12 @@ body {
   font-size: 2em;
 }
 
+.calculator select {
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 2em;
+}
+
 .calculator #symbol {
   width: 56px !important;
 }
@@ -75,8 +81,7 @@ body {
 }
 
 .calculator button {
-  width: 60px;
-  height: 60px;
+  padding: 10px 20px;
   cursor: pointer;
   border-radius: 5px;
   border: 2px solid #fff;
@@ -85,11 +90,14 @@ body {
   font-size: 2em;
   margin: 0 20px;
   outline: none;
+  margin: 20px 0;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .calculator button:hover {
-  border-color: #aaa;
-  color: #aaa;
+  background: #fff;
+  color: #333;
 }
 
 /*

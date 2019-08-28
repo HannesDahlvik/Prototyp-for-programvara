@@ -19,19 +19,19 @@
                 <input type="number" name="number1" id="number1">
             </div>
             <div class="col">
-                <label for="symbol">Symbol</label>
-                <input name="symbol" id="symbol" disabled>
-            </div>
-            <div class="col">
                 <label for="number2">Number 2</label>
                 <input type="number" name="number2" id="number2">
             </div>
         </div>
-        <div class="row">
-            <button id="addition">+</button>
-            <button id="subtract">-</button>
-            <button id="multiply">*</button>
-            <button id="division">/</button>
+        <div class="col">
+            <select id="select">
+                <option id="addition" value="addition">+</option>
+                <option id="subtract" value="subtract">-</option>
+                <option id="multiply" value="multiply">*</option>
+                <option id="division" value="division">/</option>
+            </select>
+
+            <button id="calculate">Calculate</button>
         </div>
         <div class="col">
             <label for="answer">Answer</label>
@@ -39,7 +39,7 @@
         </div>
     </div>
 
-    <script src="scipt.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
