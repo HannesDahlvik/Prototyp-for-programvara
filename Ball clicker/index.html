@@ -14,7 +14,7 @@
         margin: 0;
     }
 
-    @media(max-width: 1200px) {
+    @media(max-width: 900px) {
         canvas {
             width: 100%;
         }
@@ -26,8 +26,8 @@
     <script>
         var config = {
             type: Phaser.AUTO,
-            width: 1280,
-            height: 960,
+            width: 800,
+            height: 600,
             scene: {
                 preload: preload,
                 create: create,
@@ -43,14 +43,14 @@
         }
 
         function create() {
-            this.add.image(640, 480, 'background');
+            this.add.image(400, 300, 'background');
 
-            circle = this.add.circle(640, 480, 40, 0xffff00);
+            circle = this.add.circle(400, 300, 40, 0xffff00);
 
             circle.setInteractive();
             circle.on('pointerdown', () => {
-                circle.x = (Math.random() * 1280);
-                circle.y = (Math.random() * 960);
+                circle.x = (Math.random() * 800);
+                circle.y = (Math.random() * 600);
                 score += 1;
             });
 
