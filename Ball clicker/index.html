@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ball clicker</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.19.0/phaser-arcade-physics.min.js"></script>
+</head>
+
+<style>
+    body {
+        margin: 0;
+    }
+
+    @media(max-width: 1200px) {
+        canvas {
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+
+    <script>
+        var config = {
+            type: Phaser.AUTO,
+            width: 1280,
+            height: 960,
+            scene: {
+                preload: preload,
+                create: create,
+                update: update
+            }
+        };
+
+        var game = new Phaser.Game(config);
+        var circle;
+
+        function preload() {
+            this.load.image('background', 'assets/background.png');
+        }
+
+        function create() {
+            this.add.image(640, 480, 'background');
+
+            circle = this.add.circle(640, 480, 40, 0xffff00);
+
+            circle.setInteractive();
+            circle.on('pointerdown', () => {
+                circle.x = (Math.random() * 1280);
+                circle.y = (Math.random() * 960);
+                score += 1;
+            });
+
+            game.canvas.style.cursor = "crosshair"
+        }
+
+        function update() {}
+    </script>
+
+</body>
+
+</html>
