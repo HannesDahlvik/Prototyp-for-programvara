@@ -37,6 +37,11 @@
 
         var game = new Phaser.Game(config);
         var circle;
+        var score = 0;
+        var scoreText;
+        var gameOver = false;
+        var countdown = 30;
+        var countdownText;
 
         function preload() {
             this.load.image('background', 'assets/background.png');
@@ -52,9 +57,23 @@
                 circle.x = (Math.random() * 800);
                 circle.y = (Math.random() * 600);
                 score += 1;
+                scoreText.setText('Score: ' + score);
             });
 
-            game.canvas.style.cursor = "crosshair"
+
+            game.canvas.style.cursor = "crosshair";
+
+            // TEXT
+
+            scoreText = this.add.text(16, 16, 'Score: 0', {
+                fontSize: '16px',
+                fill: '#fff'
+            });
+
+            countdownText = this.add.text(340, 16, 'Countdown: 30', {
+                fontSize: '16px',
+                fill: '#fff'
+            });
         }
 
         function update() {}
